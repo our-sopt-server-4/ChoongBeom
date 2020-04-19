@@ -11,7 +11,3 @@ var fourTeam = [
 fourTeam.forEach(
     item => console.log("이름은 : " + item.name+ "이고 나이가 : "+item.age)
 );
-
-
-//Json배열 fourTeam안에도 함수를 선언할 수 있나?
-//아 당연히 안되겠구나.
