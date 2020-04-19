@@ -1,59 +1,31 @@
-// var server1 = ["김해리", "손예지", 43, null, true]; 
-// var server2 = Array("신윤재", "유가희", 13);
-// var server3 = new Array("이현주", "조충범", false, undefined);
+//var는 Function Scope
+var vv = 123;
+var vv = 321;
+console.log("vv : ", vv);
 
-// console.log('server1 : ', server1);
-// console.log('server2 : ', server2);
-// console.log('server3 : ', server3);
-
-// server1.push(123);
-// server2[server2.length] = "뭐 넣지";
+//let과 const는 Block Scope, 
+//let과 const는 재선언이 불가능하다.
+// ex). let a = 123; let a = 321; 은 불가능하다
 
 
-// let str1 = 'server1에는 "';
-// for (var item of server1) {
-//     str1 += item + ', ';
-// }
+let ll = 123;
+//let ll = 321;
+console.log("ll : ", ll);
+
+const cc = 123;
+//const cc = 321;
+console.log("cc : ", cc);
+
+var vv = 'abc';
+vv = 'def';
+console.log("vv : ", vv);
+
+ll = 'abc';
+console.log("ll : ", ll)
+
+cc = 'abc'
+console.log("cc : ", cc)
 
 
-// str1 += '"이 들어있네요 ~';
-// console.log(str1);
-
-// let str2 = 'server2에는 "';
-
-// for (var item in server2){
-//     str2 += server2[item] + ', ';
-// }
-// str2 += '"이 (가) 들어있네요 ~';
-// console.log(str2);
-
-// let str3 = 'server3에는 "';
-// server3.forEach( item => str3 += item + ', ');
-// str3 += '"이 (가) 들어있네요 ~';
-// console.log(str3);
-// //이거 아이템 왜지?
-
-
-var sopt = {
-    name : 'OUR SOPT',
-    slogan : 'WE LEAD OUR SOPT',
-    part : ['plan', 'design', 'android', 'iOS', 'server'],
-    number : 180,
-    printName : function(){
-        console.log('name : ', this.name)
-    },
-    printNum : function(){
-        console.log('number : ', this.number)
-    }
-};
-
-console.log('typeof sopt : ' + typeof sopt);
-
-console.log('sopt : '+sopt);
-console.log('sopt : ', sopt);
-console.log('sopt : ' + JSON.stringify(sopt));
-
-sopt.printName();
-sopt.number = 190;
-sopt.printNum();
-
+//let은 변수 값 재할당은 가능하지만 const는 재할당도 되지 않는다.
+//또한 const는 변수 선언과 동시에 값을 초기화 해줘야 한다.
