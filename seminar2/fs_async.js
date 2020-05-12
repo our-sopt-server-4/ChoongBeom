@@ -22,11 +22,11 @@ numArr.forEach ((num) => {
 /*
     fs.writeFile (file, data, [options], callback) {}
     비동기 방식으로 파일 불러오기 - 순서 확인해보기
-*/
-// numArr.forEach((num) => {
-//     const title = 'async' + num;
-//     fs.readFile(`${title}.txt`, (err, data) => {
-//         if (err) return console.log (err.message);
-//         console.log(`${title}.txt 파일에는 아래의 데이터가 있습니다. \n"${data}"\n`);
-//     });
-// });
+*/  
+numArr.forEach((num) => {
+    const title = 'async' + num;
+    fs.readFile(`${title}.txt`, (err, data) => {
+        if (err) return console.log (err.message);
+        console.log(`${title}.txt 파일에는 아래의 데이터가 있습니다. \n"${data}"\n`);
+    });
+});

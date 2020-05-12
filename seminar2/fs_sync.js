@@ -14,6 +14,7 @@ numArr.forEach((num) => {
 });
 
 
+
 /*
    fs.readFileSync ( path, [options]) {}
    동기 방식으로 파일 불러오기 - 순서 확인해보기
