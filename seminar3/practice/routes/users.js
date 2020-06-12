@@ -35,4 +35,11 @@ router.post('/signin', (req, res)=> {
   }
   res.status(200).send("뭐야압");
 })
+
+router.get('/profiles/:id', async(req, res) => {
+  const uid = req.params.id;
+  const user = User.filter(user => user.id == uid);
+  return res.status(200).send(user);
+
+});
 module.exports = router;

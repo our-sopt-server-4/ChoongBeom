@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('../seminar2/sum');
 
 var result = sum(1,3);
 console.log('sum result : ', result);
